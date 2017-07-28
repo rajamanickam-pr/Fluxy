@@ -1,0 +1,5 @@
+E:\Rajamanickam\Projects\Fluxy.Web\Fluxy.Repositories\bin\Debug\Fluxy.Repositories.dll
+E:\Rajamanickam\Projects\Fluxy.Web\Fluxy.Repositories\bin\Debug\Fluxy.Repositories.pdb
+E:\Rajamanickam\Projects\Fluxy.Web\Fluxy.Repositories\obj\Debug\Fluxy.Repositories.csprojResolveAssemblyReference.cache
+E:\Rajamanickam\Projects\Fluxy.Web\Fluxy.Repositories\obj\Debug\Fluxy.Repositories.dll
+E:\Rajamanickam\Projects\Fluxy.Web\Fluxy.Repositories\obj\Debug\Fluxy.Repositories.pdb
