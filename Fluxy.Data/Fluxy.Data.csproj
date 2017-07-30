@@ -61,14 +61,16 @@
     <Compile Include="Common\Entity.cs" />
     <Compile Include="Common\IAuditableEntity.cs" />
     <Compile Include="Common\IEntity.cs" />
+    <Compile Include="EntityModels\Categories\Category.cs" />
+    <Compile Include="EntityModels\Categories\SubCategory.cs" />
     <Compile Include="FluxyContext.cs" />
     <Compile Include="Initilizers\FluxyDBInitializer.cs" />
+    <Compile Include="Mapping\Categories\CategoryMap.cs" />
+    <Compile Include="Mapping\Categories\SubCategoryMap.cs" />
     <Compile Include="Mapping\FluxyEntityTypeConfiguration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="EntityModels\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />

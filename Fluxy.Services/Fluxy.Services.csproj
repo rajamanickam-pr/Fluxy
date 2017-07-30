@@ -40,7 +40,22 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Categories\CategoryService.cs" />
+    <Compile Include="Categories\ICategoryService.cs" />
+    <Compile Include="Common\EntityService.cs" />
+    <Compile Include="Common\IEntityService.cs" />
+    <Compile Include="Common\IService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Fluxy.Data\Fluxy.Data.csproj">
+      <Project>{D25FA26D-27DB-405A-9763-6B20371A88FE}</Project>
+      <Name>Fluxy.Data</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Fluxy.Repositories\Fluxy.Repositories.csproj">
+      <Project>{7A22DB2F-19DD-4005-99E8-F89053B5E905}</Project>
+      <Name>Fluxy.Repositories</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

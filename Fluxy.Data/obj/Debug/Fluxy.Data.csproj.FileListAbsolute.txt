@@ -12,3 +12,17 @@ E:\Rajamanickam\Projects\Fluxy.Web\Fluxy.Data\bin\Debug\Microsoft.AspNet.Identit
 E:\Rajamanickam\Projects\Fluxy.Web\Fluxy.Data\obj\Debug\Fluxy.Data.csprojResolveAssemblyReference.cache
 E:\Rajamanickam\Projects\Fluxy.Web\Fluxy.Data\obj\Debug\Fluxy.Data.dll
 E:\Rajamanickam\Projects\Fluxy.Web\Fluxy.Data\obj\Debug\Fluxy.Data.pdb
+C:\Users\User\Source\Repos\Fluxy\Fluxy.Data\bin\Debug\Fluxy.Data.dll.config
+C:\Users\User\Source\Repos\Fluxy\Fluxy.Data\bin\Debug\Fluxy.Data.dll
+C:\Users\User\Source\Repos\Fluxy\Fluxy.Data\bin\Debug\Fluxy.Data.pdb
+C:\Users\User\Source\Repos\Fluxy\Fluxy.Data\bin\Debug\EntityFramework.dll
+C:\Users\User\Source\Repos\Fluxy\Fluxy.Data\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\User\Source\Repos\Fluxy\Fluxy.Data\bin\Debug\Microsoft.AspNet.Identity.Core.dll
+C:\Users\User\Source\Repos\Fluxy\Fluxy.Data\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\User\Source\Repos\Fluxy\Fluxy.Data\bin\Debug\EntityFramework.xml
+C:\Users\User\Source\Repos\Fluxy\Fluxy.Data\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\User\Source\Repos\Fluxy\Fluxy.Data\bin\Debug\Microsoft.AspNet.Identity.Core.xml
+C:\Users\User\Source\Repos\Fluxy\Fluxy.Data\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\User\Source\Repos\Fluxy\Fluxy.Data\obj\Debug\Fluxy.Data.csprojResolveAssemblyReference.cache
+C:\Users\User\Source\Repos\Fluxy\Fluxy.Data\obj\Debug\Fluxy.Data.dll
+C:\Users\User\Source\Repos\Fluxy\Fluxy.Data\obj\Debug\Fluxy.Data.pdb

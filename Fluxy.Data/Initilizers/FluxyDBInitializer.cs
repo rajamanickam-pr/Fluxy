@@ -2,7 +2,7 @@
 
 namespace Fluxy.Data.Initilizers
 {
-    public  class FluxyDBInitializer: DropCreateDatabaseAlways<FluxyContext>
+    public  class FluxyDBInitializer: CreateDatabaseIfNotExists<FluxyContext>
     {
         protected override void Seed(FluxyContext context)
         {

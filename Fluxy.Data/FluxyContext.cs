@@ -83,5 +83,7 @@ namespace Fluxy.Data
 
             return base.SaveChanges();
         }
+
+        public System.Data.Entity.DbSet<Fluxy.Data.EntityModels.Categories.Category> Categories { get; set; }
     }    
 }
