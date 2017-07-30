@@ -19,3 +19,8 @@ C:\Users\User\Source\Repos\Fluxy\Fluxy.Misc\bin\Debug\System.Web.Razor.xml
 C:\Users\User\Source\Repos\Fluxy\Fluxy.Misc\bin\Debug\System.Web.WebPages.Razor.xml
 C:\Users\User\Source\Repos\Fluxy\Fluxy.Misc\bin\Debug\System.Web.WebPages.xml
 C:\Users\User\Source\Repos\Fluxy\Fluxy.Misc\bin\Debug\System.Web.WebPages.Deployment.xml
+C:\Users\User\Source\Repos\Fluxy\Fluxy.Misc\bin\Debug\Fluxy.Misc.dll.config
+C:\Users\User\Source\Repos\Fluxy\Fluxy.Misc\bin\Debug\EntityFramework.dll
+C:\Users\User\Source\Repos\Fluxy\Fluxy.Misc\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\User\Source\Repos\Fluxy\Fluxy.Misc\bin\Debug\EntityFramework.xml
+C:\Users\User\Source\Repos\Fluxy\Fluxy.Misc\bin\Debug\EntityFramework.SqlServer.xml

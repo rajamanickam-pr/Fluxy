@@ -24,7 +24,7 @@ namespace Fluxy.Services.Categories
 
         public Category GetById(long Id)
         {
-            return _categoryRepository.GetById(Id);
+            return _categoryRepository.GetSingle(Id);
         }
     }
 }

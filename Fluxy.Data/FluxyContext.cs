@@ -85,5 +85,7 @@ namespace Fluxy.Data
         }
 
         public System.Data.Entity.DbSet<Fluxy.Data.EntityModels.Categories.Category> Categories { get; set; }
+
+        public System.Data.Entity.DbSet<Fluxy.Data.EntityModels.Categories.SubCategory> SubCategories { get; set; }
     }    
 }

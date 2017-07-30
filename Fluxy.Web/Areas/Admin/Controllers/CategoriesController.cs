@@ -13,9 +13,11 @@ using Fluxy.Misc.Mvc.Controllers;
 
 namespace Fluxy.Web.Areas.Admin.Controllers
 {
+    [Authorize]
     public class CategoriesController : BaseController
     {
-        ICategoryService _categoryService;
+        private readonly ICategoryService _categoryService;
+
         public CategoriesController(ICategoryService categoryService)
         {
             _categoryService = categoryService;

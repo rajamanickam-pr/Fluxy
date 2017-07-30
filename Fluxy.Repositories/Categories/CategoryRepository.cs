@@ -16,9 +16,9 @@ namespace Fluxy.Repositories.Categories
         {
         }
 
-        public Category GetById(long id)
+        public Category GetSingle(long id)
         {
-            return FindBy(c => c.Id == id).FirstOrDefault();
+            return GetSingle(c => c.Id == id);
         }
     }
 }

@@ -10,11 +10,12 @@ using Microsoft.AspNet.Identity.Owin;
 using Microsoft.Owin.Security;
 using Fluxy.Web.Models;
 using Fluxy.Data;
+using Fluxy.Misc.Mvc.Controllers;
 
 namespace Fluxy.Web.Controllers
 {
     [Authorize]
-    public class AccountController : Controller
+    public class AccountController : BaseController
     {
         private ApplicationSignInManager _signInManager;
         private ApplicationUserManager _userManager;
@@ -95,6 +96,7 @@ namespace Fluxy.Web.Controllers
                     return RedirectToAction("SendCode", new { ReturnUrl = returnUrl, RememberMe = model.RememberMe });
                 case SignInStatus.Failure:
                 default:
+                    Danger("Invalid login attempt.", true);
                     ModelState.AddModelError("", "Invalid login attempt.");
                     return View(model);
             }
@@ -448,6 +450,7 @@ namespace Fluxy.Web.Controllers
         {
             foreach (var error in result.Errors)
             {
+                Danger(error, true);
                 ModelState.AddModelError("", error);
             }
         }

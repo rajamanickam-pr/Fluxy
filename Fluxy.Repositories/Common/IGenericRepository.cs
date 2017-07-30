@@ -7,9 +7,9 @@ namespace Fluxy.Repositories.Common
 {
     public interface IGenericRepository<T> where T : BaseEntity
     {
-
-        IEnumerable<T> GetAll();
-        IEnumerable<T> FindBy(Expression<Func<T, bool>> predicate);
+        IEnumerable<T> GetAll(params Expression<Func<T, object>>[] properties);
+        IEnumerable<T> GetList(Func<T, bool> where, params Expression<Func<T, object>>[] properties);
+        T GetSingle(Func<T, bool> where, params Expression<Func<T, object>>[] properties);
         T Add(T entity);
         T Delete(T entity);
         void Edit(T entity);

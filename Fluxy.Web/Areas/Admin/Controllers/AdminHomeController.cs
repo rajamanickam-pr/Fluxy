@@ -7,6 +7,7 @@ using System.Web.Mvc;
 
 namespace Fluxy.Web.Areas.Admin.Controllers
 {
+    [Authorize]
     public class AdminHomeController : BaseController
     {
         // GET: Admin/AdminHome

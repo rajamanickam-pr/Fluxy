@@ -10,6 +10,6 @@ namespace Fluxy.Repositories.Categories
 {
     public interface ICategoryRepository: IGenericRepository<Category>
     {
-        Category GetById(long id);
+        Category GetSingle(long id);
     }
 }

@@ -258,3 +258,4 @@ C:\Users\User\Source\Repos\Fluxy\Fluxy.Web\bin\Fluxy.Services.dll
 C:\Users\User\Source\Repos\Fluxy\Fluxy.Web\bin\Fluxy.Services.pdb
 C:\Users\User\Source\Repos\Fluxy\Fluxy.Web\bin\Fluxy.Misc.dll
 C:\Users\User\Source\Repos\Fluxy\Fluxy.Web\bin\Fluxy.Misc.pdb
+C:\Users\User\Source\Repos\Fluxy\Fluxy.Web\bin\Fluxy.Misc.dll.config

@@ -3,6 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.Data.Entity;
 using System.Linq;
+using System.Linq.Expressions;
 
 namespace Fluxy.Repositories.Common
 {
@@ -18,17 +19,48 @@ namespace Fluxy.Repositories.Common
             _dbset = context.Set<T>();
         }
 
-        public virtual IEnumerable<T> GetAll()
+        public virtual IEnumerable<T> GetAll(params Expression<Func<T, object>>[] properties)
         {
+            List<T> list = new List<T>();
 
-            return _dbset.AsEnumerable<T>();
+            IQueryable<T> dbQuery = _entities.Set<T>();
+
+            foreach (Expression<Func<T, object>> property in properties)
+                dbQuery = dbQuery.Include<T, object>(property);
+
+            list = dbQuery.AsNoTracking()
+                            .ToList<T>();
+
+            return list;
         }
 
-        public IEnumerable<T> FindBy(System.Linq.Expressions.Expression<Func<T, bool>> predicate)
+        public virtual IEnumerable<T> GetList(Func<T, bool> where, params Expression<Func<T, object>>[] properties)
         {
+            List<T> list = new List<T>();
 
-            IEnumerable<T> query = _dbset.Where(predicate).AsEnumerable(); 
-            return query;
+            IQueryable<T> dbQuery = _entities.Set<T>();
+
+            foreach (Expression<Func<T, object>> property in properties)
+                dbQuery = dbQuery.Include<T, object>(property);
+
+            list = dbQuery.AsNoTracking()
+                            .Where(where)
+                            .ToList<T>();
+
+            return list;
+        }
+
+        public T GetSingle(Func<T, bool> where, params Expression<Func<T, object>>[] properties)
+        {
+            T item = null;
+            IQueryable<T> dbQuery = _entities.Set<T>();
+
+            foreach (Expression<Func<T, object>> property in properties)
+                dbQuery = dbQuery.Include<T, object>(property);
+
+            item = dbQuery.AsNoTracking()
+                            .FirstOrDefault(where);
+            return item;
         }
 
         public virtual T Add(T entity)
@@ -38,7 +70,9 @@ namespace Fluxy.Repositories.Common
 
         public virtual T Delete(T entity)
         {
-            return _dbset.Remove(entity);
+            _entities.Entry(entity).State = EntityState.Deleted;
+            _entities.SaveChanges();
+            return entity;
         }
 
         public virtual void Edit(T entity)
